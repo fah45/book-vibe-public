@@ -41,8 +41,8 @@ const BookDetails = () => {
                             <h1>rating: {rating}</h1>
                         </div>
                         <div className="flex gap-4">
-                        <button onClick={()=>handleApplyBook(books)} className="btn btn-primary">Read</button>
-                        <button onClick={()=>handleApplyBook(books)} className="btn btn-primary">Wishlist</button>
+                        <button onClick={()=>handleApplyBook(books)} className="btn">Read</button>
+                        <button onClick={()=>handleApplyBook(books)} className="btn bg-[#50B1C9] text-white">Wishlist</button>
                         </div>
                     </div>
                     
