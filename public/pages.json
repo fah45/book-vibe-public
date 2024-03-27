@@ -1,0 +1,81 @@
+
+[
+    {
+      "bookId": 1,
+      "bookName": "Gone Girl",
+      "author": "Gillian Flynn",
+      "image": "https://i.ibb.co/HgrPcMv/Gone-Girl.jpg",
+      "review": "A gripping psychological thriller that keeps you on the edge of your seat until the very end.",
+      "totalPages": 432,
+      "rating": 4.5,
+      "category": "Mystery",
+      "tags": ["Suspense", "Psychological"],
+      "publisher": "Crown Publishing Group",
+      "yearOfPublishing": 2012
+    },
+    {
+      "bookId": 2,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/2F6hv8d/B-2.jpg",
+      "review": "A classic tale of love, greed, and the pursuit of the American Dream, set against the backdrop of the roaring twenties.",
+      "totalPages": 180,
+      "rating": 4.2,
+      "category": "Classic",
+      "tags": ["Romance", "Tragedy"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": 3,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/YyN7Jd2/B-3.jpg",
+      "review": "A dystopian masterpiece that explores themes of totalitarianism, surveillance, and the power of language.",
+      "totalPages": 328,
+      "rating": 4.7,
+      "category": "Dystopian",
+      "tags": ["Political", "Social Commentary"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "bookId": 4,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/ct8pScr/B-4.jpg",
+      "review": "An enduring classic that tackles themes of racial injustice, moral growth, and empathy in the American South.",
+      "totalPages": 324,
+      "rating": 4.6,
+      "category": "Literary Fiction",
+      "tags": ["Coming of Age", "Legal Drama"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/bXkGR79/B-1-1.jpg",
+      "review": "A seminal work of adolescent angst and rebellion, capturing the essence of teenage alienation.",
+      "totalPages": 224,
+      "rating": 4.0,
+      "category": "Literary Fiction",
+      "tags": ["Coming of Age", "Existentialism"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "bookId": 6,
+      "bookName": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "image": "https://i.ibb.co/bbt7qrN/B-6.jpg",
+      "review": "A fast-paced thriller filled with secret societies, ancient mysteries, and religious intrigue.",
+      "totalPages": 454,
+      "rating": 4.3,
+      "category": "Thriller",
+      "tags": ["Conspiracy", "Art"],
+      "publisher": "Doubleday",
+      "yearOfPublishing": 2003
+    }
+  ]
