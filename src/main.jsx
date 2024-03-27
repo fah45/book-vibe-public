@@ -10,6 +10,7 @@ import BookDetails from './pages/BookDetails.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import Career from "./pages/Career.jsx"
+import  { Toaster } from 'react-hot-toast';
 
 
 const router = createBrowserRouter([
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       {
         path:'/bookDetails/:bookId',
         element:<BookDetails></BookDetails>,
-        loader: ()=> fetch('/pages.json'),
+        loader: ({params})=> fetch('/pages.json'),
       },
       {
         path:'/pagesRead',
@@ -53,5 +54,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
    <RouterProvider router={router}></RouterProvider>
+   <Toaster />
   </>,
 )
