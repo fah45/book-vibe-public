@@ -31,14 +31,16 @@ const BookDetails = () => {
                     <div>
                         <h1 className="text-5xl font-bold">{bookName}</h1>
                         <p className="py-6">Review: {review}</p>
-                        <p>By: {author}</p>
-                        <p>{category}</p>
-                        <h1>Tags: {tags}</h1>
-                        <div>
-                            <h1>Number of Pages: {totalPages}</h1>
-                            <h1>Publisher:: {publisher}</h1>
-                            <h1>Year of Publishing: {yearOfPublishing}</h1>
-                            <h1>rating: {rating}</h1>
+                        <p className="py-6">By: {author}</p>
+                        <p className="py-6">{category}</p>
+                        <h1 className="font-bold">Tags: {tags}</h1>
+                        <div className="">
+                            <ul className="font-bold">
+                                <li>Number of Pages: {totalPages}</li>
+                                <li>Publisher: {publisher}</li>
+                                <li>Year of Publishing: {yearOfPublishing}</li>
+                                <li>rating: {rating}</li>
+                            </ul>
                         </div>
                         <div className="flex gap-4">
                         <button onClick={()=>handleApplyBook(books)} className="btn">Read</button>
