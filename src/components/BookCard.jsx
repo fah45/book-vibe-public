@@ -1,10 +1,11 @@
 
 import { CiStar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const BookCard = ({ book }) => {
     const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book
     return (
-        <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900 dark:bg-gray-50 w-[360px] gap-4 p-6 border-2">
+        <Link to={`/bookDetails/${bookId}`} className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900 dark:bg-gray-50 w-[360px] gap-4 p-6 border-2">
             <div className="flex justify-center items-center mt-4">
                 <img role="presentation" className="rounded h-44 bg-gray-500 dark:bg-gray-500 shadow-2xl w-[130px]" src={image} />
             </div>
@@ -24,7 +25,7 @@ const BookCard = ({ book }) => {
                     <p className="flex items-center"><CiStar /> <span> {rating}</span></p>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

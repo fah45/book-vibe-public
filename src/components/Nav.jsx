@@ -24,6 +24,12 @@ const Nav = () => {
                     <NavLink to='/pagesRead' className={({isActive})=> isActive? 'text-primary font-bold': 'font-bold'}>
                       Pages to Read 
                     </NavLink>
+                    <NavLink to='/career' className={({isActive})=> isActive? 'text-primary font-bold': 'font-bold'}>
+                      Career
+                    </NavLink>
+                    <NavLink to='/about' className={({isActive})=> isActive? 'text-primary font-bold': 'font-bold'}>
+                      About Us
+                    </NavLink>
                 </ul>
             </div>
             <div className="navbar-end gap-2">
