@@ -1,28 +1,45 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveBook } from "../utils";
+import { saveWishlist } from "../utils/parts";
 
 
 
 const BookDetails = () => {
     const [singleBook, setSingleBook] = useState({})
+    const [loading, setLoading] = useState(true)
     const books = useLoaderData()
     const { bookId } = useParams()
 
-    useEffect(() => {
-        const book = books.find(book => book.bookId === +bookId)
-        console.log(book)
-        setSingleBook(book)
-    }, [books, bookId])
-
-    const handleApplyBook = books =>{
+    const handleApplyBook = () => {
         // console.log(book)
-        saveBook(books)
+        saveBook(singleBook)
     }
 
-    console.log(singleBook)
+    const handleApplyWishlist = () =>{
+        console.log(singleBook)
+        saveWishlist(singleBook)
+
+    }
+
+
+    useEffect(() => {
+        if (books && bookId) {
+            setLoading(true)
+            const bookObj = books.find(book => book.bookId === +bookId)
+            // console.log(bookObj)
+            setSingleBook(bookObj)
+            setLoading(false)
+        }
+    }, [books, bookId])
+
+
+    // console.log(singleBook)
     const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = singleBook
 
+    if (loading) {
+        return
+    }
     return (
         <div className="p-8">
             <div className="hero min-h-screen">
@@ -43,11 +60,11 @@ const BookDetails = () => {
                             </ul>
                         </div>
                         <div className="flex gap-4">
-                        <button onClick={()=>handleApplyBook(books)} className="btn">Read</button>
-                        <button onClick={()=>handleApplyBook(books)} className="btn bg-[#50B1C9] text-white">Wishlist</button>
+                            <button onClick={() => handleApplyBook()} className="btn">Read</button>
+                            <button onClick={()=> handleApplyWishlist()} className="btn bg-[#50B1C9] text-white">Wishlist</button>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

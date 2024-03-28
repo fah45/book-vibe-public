@@ -1,32 +1,24 @@
 import toast from "react-hot-toast"
 
 export const getBookDetails = () =>{
-    let books = []
+    let readBooks = []
     const storedBook = localStorage.getItem('book')
     if(storedBook) {
-         books = JSON.parse(storedBook)
+         readBooks = JSON.parse(storedBook)
     }
 
-    return books
+    return readBooks
 }
 
 // save
-export const saveBook = book => {
+export const saveBook = singleBook => {
     let books = getBookDetails()
-    const isExist = books.find(b => b.id === books.id)
+    const isExist = books.find(b => b.bookId === singleBook.bookId)
     if (isExist) {
       return toast.error('Already Added!')
     }
-    books.push(book)
-    localStorage.setItem('books', JSON.stringify(books))
+    books.push(singleBook)
+    console.log(books)
+    localStorage.setItem('book', JSON.stringify(books))
     toast.success('Book marked Successfully!')
-  }
-
-
-// delete
-export const deleteBook = id => {
-    let books = getBookDetails()
-    const remaining = books.filter(b => b.id !== id)
-    localStorage.setItem('books', JSON.stringify(remaining))
-    toast.success('Book Removed from Bookmark!')
   }

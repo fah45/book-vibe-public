@@ -13,7 +13,7 @@ const Books = () => {
 
     // console.log(books)
     const books = useLoaderData()
-    console.log(books)
+    // console.log(books)
 
     return (
         <div>
