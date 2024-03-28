@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const MarkedWish = ({ wishItem }) => {
-    const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = wishItem
+    const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = wishItem
     return (
         <div className="hero bg-base-400">
             <div className="hero-content flex-col lg:flex-row">
@@ -25,7 +27,7 @@ const MarkedWish = ({ wishItem }) => {
                     <div className="flex gap-4">
                     <button className="btn btn-primary">{category}</button>
                     <button className="btn btn-primary">{rating}</button>
-                    <button className="btn bg-green-400">View Details</button>
+                    <Link to={`/bookDetails/${bookId}`} className="btn bg-green-400">View Details</Link>
                     </div>
                 </div>
             </div>

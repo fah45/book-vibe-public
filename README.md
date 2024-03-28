@@ -1,8 +1,15 @@
-# React + Vite
+# Book Vibe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site URL:** [YourWebsiteURLHere.com](#)
 
-Currently, two official plugins are available:
+## Features and Characteristics:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Book Cards:** Browse through visually appealing book cards showcasing essential details like title, author, and cover image for an engaging browsing experience.
+   
+- **Detailed View:** Click on any book card to delve deeper into its details, including a summary, reviews, and options to add to your reading list or wishlist.
+   
+- **Custom Chart Visualization:** Seamlessly track your reading progress with a custom chart that dynamically updates as you mark books as "read." Visualize your reading habits and accomplishments with ease.
+   
+- **Reading List Management:** Efficiently manage your reading list by adding books you want to read. Keep track of your progress and prioritize your reading based on your preferences.
+   
+- **Wishlist Functionality:** Curate a personalized wishlist of books you aspire to read. Easily add or remove books from your wishlist to keep track of your literary aspirations.
