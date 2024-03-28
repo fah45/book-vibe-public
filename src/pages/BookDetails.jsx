@@ -16,7 +16,7 @@ const BookDetails = () => {
         saveBook(singleBook)
     }
 
-    const handleApplyWishlist = () =>{
+    const handleApplyWishlist = () => {
         console.log(singleBook)
         saveWishlist(singleBook)
 
@@ -50,7 +50,11 @@ const BookDetails = () => {
                         <p className="py-6">Review: {review}</p>
                         <p className="py-6">By: {author}</p>
                         <p className="py-6">{category}</p>
-                        <h1 className="font-bold">Tags: {tags}</h1>
+                        <h1 className="font-bold flex items-center gap-2">Tags:
+                            {
+                                tags.map(tag => <p key={tag} className=" bg-[#23BE0A0D] mr-2 p-2 rounded-lg">{tag}</p>)
+                            }
+                            </h1>
                         <div className="">
                             <ul className="font-bold">
                                 <li>Number of Pages: {totalPages}</li>
@@ -61,7 +65,7 @@ const BookDetails = () => {
                         </div>
                         <div className="flex gap-4">
                             <button onClick={() => handleApplyBook()} className="btn">Read</button>
-                            <button onClick={()=> handleApplyWishlist()} className="btn bg-[#50B1C9] text-white">Wishlist</button>
+                            <button onClick={() => handleApplyWishlist()} className="btn bg-[#50B1C9] text-white">Wishlist</button>
                         </div>
                     </div>
 
